@@ -1,6 +1,10 @@
 import Hero from '@components/home/Hero';
 import Features from '@components/home/Features';
 import Statistics from '@components/home/Statistics';
+import Academics from '@components/home/Academics';
+import LearningApproach from '@components/home/LearningApproach';
+import CampusLife from '@components/home/CampusLife';
+import StudentExperience from '@components/home/StudentExperience';
 import CoreValues from '@components/home/CoreValues';
 
 /**
@@ -13,6 +17,10 @@ function Home() {
     <div className="flex flex-col">
       <Hero />
       <Features />
+      <Academics />
+      <LearningApproach />
+      <CampusLife />
+      <StudentExperience />
       <Statistics />
       <CoreValues />
     </div>
