@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+/*
+ * ============================================
+ * Vasant Valley School — Global Styles
+ * ============================================
+ * 
+ * Design tokens and base styles are defined here.
+ * Component-specific styles live alongside their components.
+ */
+
+/* ---- CSS Custom Properties (Design Tokens) ---- */
+:root {
+  /* Primary palette — Deep navy & gold, evoking academic prestige */
+  --color-primary: #1a2744;
+  --color-primary-light: #2d4a7a;
+  --color-primary-dark: #0f1a2e;
+
+  /* Accent — Warm gold for highlights and CTAs */
+  --color-accent: #c9a84c;
+  --color-accent-light: #e0c975;
+  --color-accent-dark: #a68a35;
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-off-white: #f8f7f4;
+  --color-gray-100: #f1f0ed;
+  --color-gray-200: #e4e3df;
+  --color-gray-300: #c8c7c3;
+  --color-gray-400: #9c9b97;
+  --color-gray-500: #6e6d69;
+  --color-gray-600: #4a4945;
+  --color-gray-700: #2d2c28;
+  --color-gray-800: #1a1918;
+  --color-black: #0d0d0c;
+
+  /* Semantic */
+  --color-success: #2e7d4f;
+  --color-warning: #d4a72c;
+  --color-error: #c0392b;
+  --color-info: #2d6da4;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Layout */
+  --max-width: 1280px;
+  --header-height: 80px;
+}
+
+/* ---- Base Reset & Defaults ---- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-gray-800);
+  background-color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+/* ---- Utility Classes ---- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

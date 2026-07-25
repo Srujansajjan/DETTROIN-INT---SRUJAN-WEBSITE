@@ -1,0 +1,12 @@
+/*
+ * Styles Directory
+ * 
+ * Place shared/partial stylesheets here, such as:
+ * - _variables.css  (if extracted from index.css)
+ * - _animations.css
+ * - _typography.css
+ * - _mixins.css
+ * 
+ * The main index.css in src/ imports Tailwind and global tokens.
+ * Component-specific CSS lives alongside each component.
+ */
