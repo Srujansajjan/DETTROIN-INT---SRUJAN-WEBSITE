@@ -1,4 +1,7 @@
 import Hero from '@components/home/Hero';
+import Features from '@components/home/Features';
+import Statistics from '@components/home/Statistics';
+import CoreValues from '@components/home/CoreValues';
 
 /**
  * Home Page
@@ -7,8 +10,11 @@ import Hero from '@components/home/Hero';
  */
 function Home() {
   return (
-    <div>
+    <div className="flex flex-col">
       <Hero />
+      <Features />
+      <Statistics />
+      <CoreValues />
     </div>
   );
 }
