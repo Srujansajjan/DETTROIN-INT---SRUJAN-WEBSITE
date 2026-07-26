@@ -1,19 +1,36 @@
+import PageHero from '@components/common/PageHero';
+import LearningPhilosophy from '@components/academics/LearningPhilosophy';
+import AcademicPrograms from '@components/academics/AcademicPrograms';
+import TeachingMethodology from '@components/academics/TeachingMethodology';
+import CoCurricularLearning from '@components/academics/CoCurricularLearning';
+import AcademicFacilities from '@components/academics/AcademicFacilities';
+import AdmissionsCTA from '@components/home/AdmissionsCTA';
+
 /**
  * Academics Page
- * 
- * Showcases the curriculum, programs, faculty,
- * and academic achievements.
+ *
+ * Showcases the educational approach, curriculum stages, teaching
+ * methodologies, and academic facilities at Vasant Valley School.
  */
 function Academics() {
   return (
-    <section className="page page--academics">
-      <div className="container" style={{ padding: 'var(--space-4xl) var(--space-lg)' }}>
-        <h1>Academics</h1>
-        <p style={{ color: 'var(--color-gray-500)', marginTop: 'var(--space-md)' }}>
-          Explore our curriculum and academic programs. This page is under construction.
-        </p>
-      </div>
-    </section>
+    <main className="flex flex-col">
+      <PageHero
+        title="Academic Excellence"
+        subtitle="A progressive, multi-disciplinary curriculum designed to nurture intellectual curiosity, creative thinking, and a lifelong love for learning."
+        image="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop"
+        breadcrumbs={[
+          { label: 'Home', path: '/' },
+          { label: 'Academics' },
+        ]}
+      />
+      <LearningPhilosophy />
+      <AcademicPrograms />
+      <TeachingMethodology />
+      <CoCurricularLearning />
+      <AcademicFacilities />
+      <AdmissionsCTA />
+    </main>
   );
 }
 
