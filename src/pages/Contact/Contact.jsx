@@ -1,19 +1,34 @@
+import PageHero from '@components/common/PageHero';
+import ContactInformation from '@components/contact/ContactInformation';
+import ContactForm from '@components/contact/ContactForm';
+import MapSection from '@components/contact/MapSection';
+import QuickContactCards from '@components/contact/QuickContactCards';
+import ContactFAQs from '@components/contact/ContactFAQs';
+
 /**
  * Contact Page
- * 
- * Contact information, location map, and inquiry form
- * for parents, students, and visitors.
+ *
+ * Provides users with multiple ways to reach Vasant Valley School,
+ * including a contact form, direct department cards, and a Google Map.
  */
 function Contact() {
   return (
-    <section className="page page--contact">
-      <div className="container" style={{ padding: 'var(--space-4xl) var(--space-lg)' }}>
-        <h1>Contact Us</h1>
-        <p style={{ color: 'var(--color-gray-500)', marginTop: 'var(--space-md)' }}>
-          Get in touch with Vasant Valley School. This page is under construction.
-        </p>
-      </div>
-    </section>
+    <main className="flex flex-col">
+      <PageHero
+        title="Get In Touch"
+        subtitle="We are here to answer your questions and provide the support you need. Reach out to us today."
+        image="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop"
+        breadcrumbs={[
+          { label: 'Home', path: '/' },
+          { label: 'Contact' },
+        ]}
+      />
+      <ContactInformation />
+      <QuickContactCards />
+      <ContactForm />
+      <MapSection />
+      <ContactFAQs />
+    </main>
   );
 }
 
