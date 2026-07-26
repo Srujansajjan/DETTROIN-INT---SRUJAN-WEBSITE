@@ -21,6 +21,7 @@ function Leadership() {
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1376&auto=format&fit=crop"
                   alt="School Principal"
                   className="w-full h-[400px] object-cover object-top"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-accent-100 rounded-2xl -z-10 hidden lg:block" />

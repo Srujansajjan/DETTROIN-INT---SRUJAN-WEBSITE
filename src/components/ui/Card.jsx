@@ -62,8 +62,8 @@ function CardImage({ src, alt, className }) {
     <div className={cn('img-zoom -mx-6 -mt-6 mb-6', className)}>
       <img
         src={src}
-        alt={alt}
-        className="w-full h-48 object-cover"
+        alt={alt || ''}
+        className="w-full h-[200px] object-cover transition-transform duration-700 group-hover:scale-105"
         loading="lazy"
       />
     </div>

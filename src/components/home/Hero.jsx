@@ -46,6 +46,8 @@ function Hero() {
             src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop"
             alt="Vasant Valley School Campus"
             className="w-full h-full object-cover object-center"
+            loading="eager"
+            fetchPriority="high"
           />
         </motion.div>
         {/* Gradient Overlay for Readability */}

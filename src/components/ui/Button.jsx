@@ -59,6 +59,8 @@ function Button({
         className
       )}
       disabled={disabled || loading}
+      aria-disabled={disabled || loading}
+      aria-busy={loading}
       {...props}
     >
       {loading && (

@@ -19,6 +19,7 @@ function SchoolStory() {
                 src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1632&auto=format&fit=crop"
                 alt="Students collaborating in a sunlit classroom"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
+                loading="lazy"
               />
             </div>
             {/* Accent element */}

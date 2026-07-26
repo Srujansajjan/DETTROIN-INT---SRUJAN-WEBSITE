@@ -18,9 +18,10 @@ function PageHero({ title, subtitle, image, breadcrumbs = [] }) {
       <div className="absolute inset-0">
         <img
           src={image}
-          alt=""
+          alt={title}
           className="w-full h-full object-cover object-center"
-          aria-hidden="true"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary-950 via-primary-950/70 to-primary-900/30" />
       </div>
