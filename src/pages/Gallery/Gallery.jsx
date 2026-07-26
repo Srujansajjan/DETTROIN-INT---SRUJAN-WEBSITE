@@ -1,19 +1,28 @@
+import PageHero from '@components/common/PageHero';
+import GalleryGrid from '@components/gallery/GalleryGrid';
+import CampusHighlights from '@components/gallery/CampusHighlights';
+
 /**
  * Gallery Page
- * 
- * Displays photo and video gallery of school events,
- * campus life, and student activities.
+ *
+ * Showcases the vibrant school life through an interactive, filterable
+ * image gallery with a lightbox, followed by campus highlights.
  */
 function Gallery() {
   return (
-    <section className="page page--gallery">
-      <div className="container" style={{ padding: 'var(--space-4xl) var(--space-lg)' }}>
-        <h1>Gallery</h1>
-        <p style={{ color: 'var(--color-gray-500)', marginTop: 'var(--space-md)' }}>
-          Browse photos and videos from campus life. This page is under construction.
-        </p>
-      </div>
-    </section>
+    <main className="flex flex-col">
+      <PageHero
+        title="Campus Life in Pictures"
+        subtitle="Explore the vibrant daily life, world-class facilities, and unforgettable events at Vasant Valley School."
+        image="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop"
+        breadcrumbs={[
+          { label: 'Home', path: '/' },
+          { label: 'Gallery' },
+        ]}
+      />
+      <GalleryGrid />
+      <CampusHighlights />
+    </main>
   );
 }
 
