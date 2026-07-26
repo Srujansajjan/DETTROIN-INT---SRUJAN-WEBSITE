@@ -5,6 +5,8 @@ import Academics from '@components/home/Academics';
 import LearningApproach from '@components/home/LearningApproach';
 import CampusLife from '@components/home/CampusLife';
 import StudentExperience from '@components/home/StudentExperience';
+import GalleryPreview from '@components/home/GalleryPreview';
+import NewsEvents from '@components/home/NewsEvents';
 import CoreValues from '@components/home/CoreValues';
 
 /**
@@ -21,6 +23,8 @@ function Home() {
       <LearningApproach />
       <CampusLife />
       <StudentExperience />
+      <GalleryPreview />
+      <NewsEvents />
       <Statistics />
       <CoreValues />
     </div>
